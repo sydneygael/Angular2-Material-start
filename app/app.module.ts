@@ -4,11 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }   from './app.component';
 import {AlertModule} from "ng2-bootstrap";
 import {MaterialModule} from "@angular/material";
+import {Ng2MaterialModule} from "ng2-material";
 
 @NgModule({
   imports:      [ BrowserModule,
                   AlertModule.forRoot(),
-                  MaterialModule.forRoot()],
+                  MaterialModule.forRoot(),Ng2MaterialModule.forRoot()],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
 })

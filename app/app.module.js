@@ -23,8 +23,7 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule,
             ng2_bootstrap_1.AlertModule.forRoot(),
-            material_1.MaterialModule.forRoot(),
-            ng2_material_1.Ng2MaterialModule.forRoot()],
+            material_1.MaterialModule.forRoot(), ng2_material_1.Ng2MaterialModule.forRoot()],
         declarations: [app_component_1.AppComponent],
         bootstrap: [app_component_1.AppComponent]
     }),
