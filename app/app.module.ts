@@ -5,13 +5,19 @@ import { AppComponent }   from './app.component';
 import {AlertModule} from "ng2-bootstrap";
 import {MaterialModule} from "@angular/material";
 import {Ng2MaterialModule} from "ng2-material";
+import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
+
 
 @NgModule({
   imports:      [ BrowserModule,
                   AlertModule.forRoot(),
                   MaterialModule.forRoot(),Ng2MaterialModule.forRoot()],
   declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+    providers:    [ {
+        provide: HAMMER_GESTURE_CONFIG,
+        useClass: HammerGestureConfig
+    } ]
 })
 
 export class AppModule { }

@@ -14,6 +14,7 @@ var app_component_1 = require("./app.component");
 var ng2_bootstrap_1 = require("ng2-bootstrap");
 var material_1 = require("@angular/material");
 var ng2_material_1 = require("ng2-material");
+var platform_browser_2 = require("@angular/platform-browser");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -25,7 +26,11 @@ AppModule = __decorate([
             ng2_bootstrap_1.AlertModule.forRoot(),
             material_1.MaterialModule.forRoot(), ng2_material_1.Ng2MaterialModule.forRoot()],
         declarations: [app_component_1.AppComponent],
-        bootstrap: [app_component_1.AppComponent]
+        bootstrap: [app_component_1.AppComponent],
+        providers: [{
+                provide: platform_browser_2.HAMMER_GESTURE_CONFIG,
+                useClass: platform_browser_2.HammerGestureConfig
+            }]
     }),
     __metadata("design:paramtypes", [])
 ], AppModule);

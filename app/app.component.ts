@@ -1,10 +1,18 @@
 import { Component } from '@angular/core';
-
+//noinspection TypeScriptCheckImport
+import {MATERIAL_DIRECTIVES} from 'ng2-material';
 @Component({
   selector: 'my-app',
-  templateUrl: 'app/basic.html'
+  templateUrl: 'app/basic.html',
+  styleUrls: ['app/style.css'],
+  directives: [MATERIAL_DIRECTIVES]
 })
-export class AppComponent { }
+export class AppComponent {
+  googleUrl: string = 'https://www.google.com';
+  title1: string = 'Button';
+  title4: string = 'Warn';
+  isDisabled: boolean = true;
+}
 
 
 /*

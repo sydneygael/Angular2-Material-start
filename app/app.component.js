@@ -9,15 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
+//noinspection TypeScriptCheckImport
+var ng2_material_1 = require("ng2-material");
 var AppComponent = (function () {
     function AppComponent() {
+        this.googleUrl = 'https://www.google.com';
+        this.title1 = 'Button';
+        this.title4 = 'Warn';
+        this.isDisabled = true;
     }
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        templateUrl: 'app/basic.html'
+        templateUrl: 'app/basic.html',
+        styleUrls: ['app/style.css'],
+        directives: [ng2_material_1.MATERIAL_DIRECTIVES]
     }),
     __metadata("design:paramtypes", [])
 ], AppComponent);
